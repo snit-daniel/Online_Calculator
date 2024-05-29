@@ -35,6 +35,8 @@ This project is a simple yet powerful web-based calculator built using HTML, CSS
 
 # Screenshot of execution results
 ![Entering Inputs To The Calculator](images/Entering_inputs.PNG)
+![Getting Result On The Calculator](images/Results.PNG)
+
 
 
 # Google slide link
