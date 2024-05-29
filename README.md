@@ -35,5 +35,9 @@ This project is a simple yet powerful web-based calculator built using HTML, CSS
 
 # Screenshot of execution results
 
+# Google slide link
+
+[Google Slides Presentation](https://docs.google.com/presentation/d/1mbfNy2Mmozv5_DMbnOAc3NCQ6-22h3lF8FSm3z8xDBk/edit?usp=sharing)
+
 # Contributing
 Contributions are welcome! If you have ideas for improvement or have found a bug, please open an issue or a pull request.
