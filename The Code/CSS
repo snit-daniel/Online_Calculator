@@ -1,0 +1,22 @@
+/* styles.css */
+
+/* Style for the table */
+table {
+    width: 250px;
+}
+
+/* Style for the input field */
+input {
+    width: 250px;
+    height: 40px;
+    font-size: 18px;
+}
+
+/* Style for the table headers */
+th {
+    width: 50px;
+    height: 40px;
+    font-size: 18px;
+    background-color: lightgrey;
+    cursor: pointer; /* Cursor changes to pointer when hovering over buttons */
+}
