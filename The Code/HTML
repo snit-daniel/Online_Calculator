@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    
+    <!-- Link to the JavaScript file -->
+    <script src="script.js"></script>
+</head>
+<body>
+
+<!-- Table structure for the calculator -->
+<table border="2" cellspacing="8" cellpadding="2">
+   <tr>
+       <!-- Input field for displaying the calculation -->
+       <td colspan="5"><input type="text" id="input" readonly></td>
+   </tr>
+   <tr>
+       <!-- Calculator buttons for clearing input, calculating result, and adding parentheses -->
+       <th colspan="2" onclick="clearInput()">Clear</th> 
+       <th colspan="1" onclick="calculate()">=</th> 
+       <th colspan="1" onclick="appendToInput('(')">(</th> 
+       <th colspan="1" onclick="appendToInput(')')">)</th> 
+   </tr>
+   <tr>
+       <!-- Calculator buttons for operators and decimal point -->
+       <th onclick="appendToInput('*')">*</th>
+       <th onclick="appendToInput('/')">/</th>
+       <th onclick="appendToInput('+')">+</th>
+       <th onclick="appendToInput('-')">-</th>
+       <th onclick="appendToInput('.')">.</th>
+   </tr>
+   <tr>
+       <!-- Calculator buttons for numbers 1-5 -->
+       <th onclick="appendToInput('1')">1</th>
+       <th onclick="appendToInput('2')">2</th>
+       <th onclick="appendToInput('3')">3</th>
+       <th onclick="appendToInput('4')">4</th>
+       <th onclick="appendToInput('5')">5</th>
+   </tr>
+   <tr>
+       <!-- Calculator buttons for numbers 6-0 -->
+       <th onclick="appendToInput('6')">6</th>
+       <th onclick="appendToInput('7')">7</th>
+       <th onclick="appendToInput('8')">8</th>
+       <th onclick="appendToInput('9')">9</th>
+       <th onclick="appendToInput('0')">0</th>
+   </tr>
+</table>
+
+</body>
+</html>
