@@ -1,0 +1,40 @@
+// Flag to determine if the result is currently displayed
+let isResultDisplayed = false;
+
+function appendToInput(value) {
+    const inputField = document.getElementById('input');
+    
+    // Check if the last displayed value was the result of a calculation
+    if (isResultDisplayed) {
+        if (!isNaN(value)) {
+            // Replace the display if the input is a number
+            inputField.value = value;
+        } else {
+            // Otherwise, continue the expression
+            inputField.value += value;
+        }
+        isResultDisplayed = false; // Reset the flag
+    } else {
+        // Append the value to the input field
+        inputField.value += value;
+    }
+}
+
+function clearInput() {
+    // Clear the input field
+    document.getElementById('input').value = '';
+    isResultDisplayed = false; // Reset the flag
+}
+
+function calculate() {
+    try {
+        // Evaluate the expression in the input field
+        let result = eval(document.getElementById('input').value);
+        // Display the result in the input field
+        document.getElementById('input').value = result;
+        isResultDisplayed = true; // Set the flag indicating the result is displayed
+    } catch (e) {
+        // Alert if the expression is invalid
+        alert('Invalid Expression');
+    }
+}
